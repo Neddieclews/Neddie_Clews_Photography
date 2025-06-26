@@ -1,0 +1,176 @@
+html{ background-color: cornflowerblue;
+}
+header {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  color: beige;
+}
+.logo{
+
+  width: 40%;
+  padding-left: 3%;
+  font-family: 'Courier New', Courier, monospace;
+}
+.buttons{
+      padding-top: 30px;
+      width: 40%;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 120%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+}
+
+.buttons a{
+
+  text-decoration:none; 
+  color: beige;
+}
+  
+
+.buttons a:hover{
+  font-weight: bold;
+  color:brown;
+} 
+
+
+.coverphoto {
+  width:30%;
+  border-radius: 80%;
+  overflow: hidden;
+  margin: auto;
+}
+
+
+  .top{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    justify-content: space-between;
+  }
+
+  .text{
+    width: 40%;
+    height: 250px;
+    margin: auto;
+    background-color: beige;
+    border-radius: 80%;
+    text-align: center;
+    color: cornflowerblue;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+  p{
+    font-size: 150%;
+  }
+
+h2{
+  font-size: 200%;
+}
+
+
+p a{
+  color: cornflowerblue;
+  list-style-type: none;
+  text-decoration:none; 
+}
+
+p a:hover{
+  color: brown;
+}
+
+/* For phones: */
+
+@media only screen and (max-width: 480px) { 	
+  .mainheader{
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+  }
+
+  .logo{
+      text-align: center;
+      width: 100%;
+      font-size: 80%;
+      padding-top: 2px;
+    }
+    .buttons{
+      width: 100%;
+      font-size: 100%;
+    }
+    .top{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .text{
+      margin-top: 30px;
+      width: 90%;
+      margin-bottom: 30px;
+      font-size: 90%;
+    }
+    .coverphoto{
+      margin: auto;
+      width: 50%;
+    }
+  }
+
+/* For tablets: */
+
+@media only screen and (max-width: 768px) and (min-width: 481px) { 	  
+
+.item{
+  font-size: 70%;
+}
+.buttons{
+  width: 80%;
+  padding-top: 10px;
+  font-size: 110%;
+}
+.logo{
+  font-size: 40%;
+  width: 70%;
+}
+.top{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.text{
+  margin-top: 30px;
+  width: 90%;
+  margin-bottom: 30px;
+}
+.coverphoto{
+  margin: auto;
+  width: 50%;
+}
+
+}
+/* For desktop: */
+
+@media only screen and (min-width: 769px) and (max-width: 1280px)   {
+
+.buttons{
+  width: 70%;
+  padding-top: 20px;
+  font-size: 90%;
+}
+
+.logo{
+  width: 80%;
+  font-size: 80%;
+}
+.text{
+  font-size: 80%;
+  width: 50%;
+}
+}
+
+/* For uge desktop: */
+
+@media only screen and (min-width: 1281px) {
+ 
+}

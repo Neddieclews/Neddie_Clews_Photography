@@ -1,0 +1,232 @@
+html {
+    background-color:darkolivegreen
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    color:rgb(203, 203, 253);
+}
+.logo{
+
+    width: 40%;
+    padding-left: 3%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.buttons{
+        padding-top: 30px;
+        width: 40%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 120%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+ 
+}
+
+.buttons a{
+
+    text-decoration:none; 
+    color: rgb(203, 203, 253);
+}
+    
+
+.buttons a:hover{
+    font-weight: bold;
+    color:brown;
+} 
+
+a {  
+    color:rgb(203, 203, 253);
+    list-style-type: none;
+    text-decoration:none; 
+    }
+a:hover{
+        font-weight: bold;
+        color: blanchedalmond;
+        cursor: pointer;
+    }
+
+.coverphoto1 {
+        width:65%;
+        margin-top: 2%;
+        border-radius: 80%;
+        margin-left: 18%;
+        overflow: hidden;
+    }
+
+h2{
+    font-size: 200%;
+    width: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    color:darkolivegreen;
+    margin: auto;
+}
+
+.midsection{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-color: rgb(203, 203, 253);
+}
+
+.text1{
+    width: 45%;
+    font-family: 'Courier New', Courier, monospace;
+    color:darkolivegreen;
+    font-size: medium;
+    margin: auto;
+}
+
+.ski{
+    width: 35%;
+    border-radius: 80%;
+    margin: 30px;
+}
+   
+.bio{
+    width: 100%;
+    text-align: center;
+}
+.text2{
+    width: 60% ;
+    margin: auto;
+}
+.p1{
+    width: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(203, 203, 253);
+    font-size: medium;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+
+
+.discover{
+    font-weight: bold;
+    padding: 15px;
+    width: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: darkolivegreen;
+    border: none;
+    color: rgb(203, 203, 253);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.bio{
+    width: 100%;
+}
+
+/* For phones: */
+
+@media only screen and (max-width: 480px) { 	
+    .mainheader{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        text-align: center;
+        width: 100%;
+        font-size: 80%;
+        padding-top: 2px;
+      }
+      .buttons{
+        width: 100%;
+        font-size: 100%;
+      }
+
+      .midsection{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .text1{
+        width: 80%;
+    }
+    .ski{
+        width: 60%;
+        margin: auto;
+        padding: 20px;
+    }
+    .bio{
+        width: 100%;
+    }
+    .p1{
+        width: 90%;
+        margin: auto;
+    }
+
+  }
+  
+  
+  /* For tablets: */
+  
+  @media only screen and (max-width: 768px) and (min-width: 481px) { 	  
+  
+.item{
+    font-size: 70%;
+}
+.buttons{
+    width: 80%;
+    padding-top: 10px;
+    font-size: 110%;
+}
+.logo{
+    font-size: 40%;
+    width: 70%;
+}
+.midsection{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text1{
+    width: 80%;
+}
+.ski{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+  } 
+  .p1{
+    width: 80%;
+    margin: auto;
+}
+  
+  /* For desktop: */
+  
+  @media only screen and (min-width: 769px) and (max-width: 1280px)   {
+  
+  .buttons{
+    width: 70%;
+    padding-top: 20px;
+    font-size: 90%;
+  }
+
+  .logo{
+    width: 80%;
+    font-size: 80%;
+  }
+  }
+  
+  /* For uge desktop: */
+  
+  @media only screen and (min-width: 1281px) {
+   
+  }

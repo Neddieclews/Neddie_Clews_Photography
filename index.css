@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:darkkhaki;
+    margin: 0;
+}
+header {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    color: brown;
+
+}
+
+.logo{
+
+    width: 40%;
+    padding-left: 3%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.buttons{
+        padding-top: 30px;
+        width: 40%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 120%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+ 
+}
+
+.buttons a{
+
+    text-decoration:none; 
+    color: brown;
+}
+    
+
+.buttons a:hover{
+    font-weight: bold;
+    color:blanchedalmond;
+}   
+
+.midsection{
+    display: flex;
+    height: 550px;
+    background-color: brown;
+    color: darkkhaki;
+    margin-bottom: 40px;
+}
+.first{
+    width: 50%;
+}
+.opener{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    width: 80%;
+    color: darkkhaki;
+    margin-left: 140px;
+    margin-top: 200px;
+}
+
+.coverphoto {
+    margin: auto;
+    width:30%;
+}
+.coverphoto img{
+    width: 100%;
+    border-radius:100%;
+}
+
+.photos{
+    margin-top: 20px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.images{
+    width: 40%;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.images img{
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    transition: all 1s;
+}
+
+.images:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+    filter: grayscale(100%);
+}
+
+.discover{
+    font-weight: bold;
+    width: 15%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    margin-top: 100px; 
+    margin: auto;
+    border: dotted 4px brown;
+    color:brown;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 90%;
+    margin-bottom: 50px;
+}
+.discover a{
+    color: brown;
+    text-decoration: none;
+}
+.discover:hover a{
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+#main {
+    background-color:black;
+    position:relative; 
+    width:70%; 
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; 
+    border-radius: 70%;    
+    margin-bottom: 30px;
+  }
+  
+  .pic {
+    width: 100%;
+    height: 550px;
+    position:absolute; 
+    top:0; 
+    left:0; 
+  } 
+  
+  .pic img { 
+    width: 100%;           
+    height: 100%;
+  }
+  
+  .hidden {                            
+    left:100%; 
+    
+  }
+  
+  @keyframes slidein{
+    0% {left:100%;}
+    100%{left:0%;}
+  }
+  @keyframes slideout{
+    0% {left:0%;}
+    100%{left:-100%;}
+  }
+
+/* For phones: */
+
+  @media only screen and (max-width: 480px) { 	
+
+
+    .mainheader{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        text-align: center;
+        width: 100%;
+        font-size: 80%;
+        padding-top: 2px;
+      }
+      .buttons{
+        padding-top: 0;
+        width: 100%;
+        font-size: 100%;
+        margin-bottom:20px;
+      }
+
+  #main{
+    width: 80%;
+    height: 250px;
+  }
+  .pic{
+    height: 250px;
+  }
+  .discover{
+    width: 30%;
+}
+.midsection{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+.coverphoto{
+    margin: 20px;
+}
+.first{
+    margin: auto;
+}
+.opener{
+    width: 100%;
+    margin: auto;
+    font-size: 100%;
+}
+.images{
+    width: 90%;
+    margin: auto;
+}
+  }
+  
+  
+  /* For tablets: */
+  
+  @media only screen and (max-width: 768px) and (min-width: 481px) { 	  
+  
+.item{
+    font-size: 70%;
+}
+.buttons{
+    width: 70%;
+    padding-top: 10px;
+    font-size: 100%;
+}
+.logo{
+    font-size: 40%;
+    width: 70%;
+}
+#main{
+    width: 90%;
+    height: 450px;
+  }
+  .pic{
+    height: 450px;
+  }
+.midsection{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+.coverphoto{
+    margin: 20px;
+}
+.first{
+    margin: auto;
+}
+.opener{
+    width: 100%;
+    margin: auto;
+    font-size: 100%;
+}
+.discover{
+    width: 30%;
+}
+
+  } 
+  
+  /* For desktop: */
+  
+  @media only screen and (min-width: 769px) and (max-width: 1280px)   {
+  
+  .buttons{
+    width: 50%;
+    padding-top: 20px;
+    font-size: 100%;
+  }
+
+  .logo{
+    width: 60%;
+    font-size: 80%;
+  }
+  #main{
+    width: 85%;
+    height: 700px;
+  }
+  .pic{
+    height: 700px;
+  }
+  
+  }
+  
+  /* For uge desktop: */
+  
+  @media only screen and (min-width: 1281px) {
+    #main{
+        width: 70%;
+        height: 680px;
+      }
+      .pic{
+        height: 680px;
+      }
+    .wrapper {
+        width: 1280px;
+        margin: auto;
+    }
+
+    .coverphoto{
+      width: 20%;
+    }
+  
+  
+  }
+  
+
+  
+
+
+
+
+

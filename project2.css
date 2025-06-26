@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:beige;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    
+}
+header {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    color: cornflowerblue;
+
+}
+
+.logo{
+
+    width: 40%;
+    padding-left: 3%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.buttons{
+        padding-top: 30px;
+        width: 40%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 120%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+ 
+}
+
+.buttons a{
+
+    text-decoration:none; 
+    color: cornflowerblue;
+}
+    
+
+.buttons a:hover{
+    font-weight: bold;
+    color:brown;
+} 
+
+
+.services{
+    padding:3%
+}
+a {  
+    list-style-type: none;
+     text-decoration:none; 
+     color:cornflowerblue ;
+    }
+    a:hover{
+        font-weight: bold;
+        color:brown;
+        cursor: pointer;
+      }
+    
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    color: cornflowerblue;
+    font-size: 800%;
+    text-align: center;
+    letter-spacing: 1%;
+}
+
+.top{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+
+.photos{
+    margin-top: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.images{
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.images img{
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    transition: all 1s;
+}
+
+.images:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+    filter: grayscale(100%);
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+   
+  
+  }
+
+.row1{
+    margin-left: 7%;
+}
+.row2{
+    margin-left: 7%;
+}
+.row4{
+    margin-left: 7%;
+}
+
+/* For phones: */
+
+@media only screen and (max-width: 480px) { 	
+    .mainheader{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+   
+    .logo{
+        text-align: center;
+        width: 100%;
+        font-size: 80%;
+        padding-top: 2px;
+      }
+      .buttons{
+        width: 100%;
+        font-size: 100%;
+      }
+
+      h3{
+        font-size: 500%;
+      }
+      .images{
+        width: 90%;
+        margin: auto;
+      }
+
+  }
+  
+  
+  /* For tablets: */
+  
+  @media only screen and (max-width: 768px) and (min-width: 481px) { 	  
+  
+.item{
+    font-size: 70%;
+}
+.buttons{
+    width: 80%;
+    padding-top: 10px;
+    font-size: 110%;
+}
+.logo{
+    font-size: 40%;
+    width: 70%;
+}
+
+h3{
+    font-size: 550%;
+}
+.images{
+    width: 40%;
+    margin: auto;
+}
+  } 
+  
+  /* For desktop: */
+  
+  @media only screen and (min-width: 769px) and (max-width: 1280px)   {
+  
+  .buttons{
+    width: 50%;
+    padding-top: 20px;
+    font-size: 100%;
+  }
+
+  .logo{
+    width: 60%;
+    font-size: 80%;
+  }
+
+  .images{
+    width: 40%;
+    margin: auto;
+  }
+
+  }
+  
+  /* For uge desktop: */
+  
+  @media only screen and (min-width: 1281px) {
+   
+  
+  }
+
+
+
+  
+
